@@ -6,10 +6,11 @@ with(i, plot(DateTime,Global_active_power, type = "l", ylab = "Global Active Pow
 with(i, plot(DateTime,Voltage, type = "l", ylab = "Voltage",
              xlab = "datetime"))
 
-with(i, plot(DateTime, Sub_metering_1, type = "l", ylab = "Energy sub metering")) 
+with(i, plot(DateTime, Sub_metering_1, type = "l", ylab = "Energy sub metering", xlab = " ")) 
 lines(i$DateTime,i$Sub_metering_2, type = "l", col = "red")
 lines(i$DateTime,i$Sub_metering_3, type = "l", col = "blue")
 
 with(i, plot(DateTime,Global_reactive_power, type = "l",
              xlab = "datetime"))
 dev.off()
+
